@@ -9,10 +9,10 @@ jobs:
       - name: Clonar repositorio
         uses: actions/checkout@v3
 
-      - name: Configurar .NET
+      - name: Configurar .NET 8.0
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '7.0.x'  # Ajusta según tu versión de .NET
+          dotnet-version: '8.0.x'  # Actualiza a la versión 8.0
 
       - name: Restaurar dependencias
         run: dotnet restore
